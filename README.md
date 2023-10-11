@@ -6,7 +6,7 @@ This extension allows you to interact with [ChatGPT](https://chat.openai.com/) f
 
 ## Features
 
-Ask general questions to query ChatGPT via an input box in the sidebar
+Ask general questions to query ChatGPT via an input box in the sidebar and save the answer to a file in the [workspace](https://code.visualstudio.com/docs/editor/workspaces).
 
 ## Requirements
 

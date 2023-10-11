@@ -23,8 +23,22 @@ function activate(context) {
       
           if (userInput) {
             const response = await sendToChatGPT(userInput);
-            vscode.window.showInformationMessage(`ChatGPT: ${response}`);
-          }
+			// Get the workspace folder for the currently open workspace.
+            const workspaceFolder = vscode.workspace.workspaceFolders[0]; // Assumes the first workspace folder.
+			// Save response to file
+			if (workspaceFolder) {
+				const filePath = vscode.Uri.joinPath(workspaceFolder.uri, 'ChatGPT_Response.txt');
+				vscode.workspace.fs.writeFile(filePath, Buffer.from(response))
+				.then(() => {
+					vscode.window.showInformationMessage('File written to the workspace.');
+				  })
+				  .catch((error) => {
+					vscode.window.showErrorMessage('Error writing the file: ' + error.message);
+				  });
+			} else { 
+				vscode.window.showErrorMessage('No workspace folder found.');
+			}
+		 }
         })
       );
 	
