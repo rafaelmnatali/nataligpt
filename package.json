@@ -1,6 +1,6 @@
 {
-  "name": "nataligpt",
-  "displayName": "nataligpt",
+  "name": "docsascode",
+  "displayName": "Docs as Code",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -13,9 +13,9 @@
   "main": "./extension.js",
   "contributes": {
     "configuration": {
-      "title": "nataligpt",
+      "title": "Docs as Code",
       "properties": {
-        "nataligpt.API Key": {
+        "docsascode.API Key": {
           "type": "string",
           "default": "",
           "description": "OpenAI API key from https://platform.openai.com/account/api-keys"
@@ -24,8 +24,8 @@
     },
     "commands": [
       {
-        "command": "nataligpt.chatGPT",
-        "title": "chatGPT"
+        "command": "docsascode.create",
+        "title": "Docs as Code: Create Markdown File"
       }
     ]
   },

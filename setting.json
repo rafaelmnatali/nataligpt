@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "title": "nataligpt",
+    "title": "docsascode",
     "properties": {
       "API Key": {
         "type": "string",

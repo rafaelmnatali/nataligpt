@@ -1,4 +1,4 @@
-# nataligpt
+# docsascode
 
 This extension allows you to interact with [ChatGPT](https://chat.openai.com/) from within the Visual Studio.
 
@@ -6,7 +6,7 @@ This extension allows you to interact with [ChatGPT](https://chat.openai.com/) f
 
 ## Features
 
-Ask general questions to query ChatGPT via an input box in the sidebar and save the answer to a file in the [workspace](https://code.visualstudio.com/docs/editor/workspaces).
+This extension employs ChatGPT to generate a Markdown file that contains a description of the current code. It then saves this Markdown file to a location within the [workspace](https://code.visualstudio.com/docs/editor/workspaces).
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Once the installation is finished, you'll need to insert your ChatGPT session to
 1. Open the "Code" menu.
 2. Select "Preferences" from the dropdown menu.
 3. Choose "Settings" to access the settings panel.
-4. In the search bar, type `nataligpt` to filter the settings list.
+4. In the search bar, type `docsascode` to filter the settings list.
 5. Enter your session token in the `API Key` field.
 
 After completing these steps, the extension should be ready to use.
